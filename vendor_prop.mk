@@ -69,3 +69,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
+# Make data selection stick in dual SIM devices
+persist.radio.aosp_usr_pref_sel=true
+
