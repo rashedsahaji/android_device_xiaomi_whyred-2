@@ -57,7 +57,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.adm.buffering.ms=6 \
     ro.vendor.sensors.facing=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sdk.sensors.gestures=false
+    ro.vendor.sdk.sensors.gestures=false \
+    persist.spectrum.profile=0
 
 #Set AudioFlinger client heap size
 PRODUCT_PROPERTY_OVERRIDES += \

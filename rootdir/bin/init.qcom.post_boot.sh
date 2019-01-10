@@ -2430,6 +2430,8 @@ case "$target" in
             echo 633600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
             echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/ignore_hispeed_on_notif
             echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down
+            chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+            chown system /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
             # online CPU4
             echo 1 > /sys/devices/system/cpu/cpu4/online
             # configure governor settings for big cluster
@@ -2447,6 +2449,8 @@ case "$target" in
             echo 1113600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
             echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/ignore_hispeed_on_notif
             echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/fast_ramp_down
+            chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+            chown system /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
 
             # bring all cores online
             echo 1 > /sys/devices/system/cpu/cpu0/online
