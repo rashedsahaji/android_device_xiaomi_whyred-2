@@ -15,9 +15,9 @@
     "branch": "lineage-16.0-caf-8998"
   },
   {
-    "repository": "akhilnarang/whyred",
+    "repository": "https://github.com/srfarias/kernel_xiaomi_whyred",
     "target_path": "kernel/xiaomi/whyred",
-    "branch": "pie"
+    "branch": "caf-pie"
   },
   {
     "repository": "rashedsahaji/Syberia_vendor_xiaomi_whyred",
