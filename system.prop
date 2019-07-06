@@ -273,3 +273,7 @@ persist.dbg.vt_avail_ovr=1
 #Additional
 persist.power.useautobrightadj=true
 persist.radio.apm_sim_not_pwdn=1
+
+# Propagating backpressure
+ro.vendor.qti.sys.fw.bservice_enable=true
+debug.sf.disable_backpressure=1
