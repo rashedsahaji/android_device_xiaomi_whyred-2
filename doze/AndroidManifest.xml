@@ -34,7 +34,7 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name="org.lineageos.settings.doze.BootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
